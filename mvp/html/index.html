@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links to make it faster starts -->
+  
+      <link rel="preconnect" href="https://api.groq.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="dns-prefetch" href="https://api.groq.com">
+
+    <!-- links to make it faster ends -->
+
+    <!-- links to set up the favicon starts  -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+      <link rel="apple-touch-icon" href="../img/logo.png">
+
+    <!-- links to set up the favicon ends  -->
+
+    <title>Promptiq.ai</title>
+
+    <!-- scss link starts -->
+        <link rel="stylesheet" href="../scss/main.css">
+    <!-- scss link ends -->
+
+    <!-- font awsome links  start -->
+
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"rel="stylesheet"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- font awsome links  end -->
+
+    
+    <!-- JS link starts -->
+        <script defer src="../js/main.js" ></script>
+    <!-- JS link ends  -->
+
+
+</head>
+<body>
+
+
+    <!-- wellcoming messgae starts -->
+
+      <div class="wellcome">
+
+        
+          <h1 class="wel-h1" >
+          
+
+              <span>Wellcome</span> 
+              <span>To</span> <br>
+              <span class="name" >PromptIQ.AI</span> 
+              <span>!!!</span> 
+
+          </h1>
+
+      </div>
+
+      <div class="overlay"></div>
+
+    <!-- wellcoming messgae ends -->
+
+
+    <!-- the whole app starts -->
+
+      <div class="all hidden">
+
+              <h2 class="mes-h2">Choose message type</h2>
+
+
+
+              <div id="themesContainer" class="themesContainer">
+
+                  <button class="themeBtn" data-theme="friendly">Friendly</button>
+
+                  <button class="themeBtn" data-theme="businessFormal">Business Formal</button>
+
+                  <button class="themeBtn" data-theme="businessCasual">Business Casual</button>
+
+                  <button class="themeBtn" data-theme="teamLead">Team Lead</button>
+
+                  <button class="themeBtn" data-theme="client">Client</button>
+
+                  <button class="themeBtn" data-theme="partner">Partner</button>
+
+                  <button class="themeBtn" data-theme="investor">Investor</button>
+
+
+
+              </div>
+
+
+
+              <div id="questions" class="questions">
+
+                      <label class="name-lb lb">
+                          Recipient Name:
+
+                          <div class="in-wr">
+                            <!-- <input class="name-in in" type="text" id="nameInput" placeholder="E.g., Alex" required /> -->
+                            <!-- <input class="name-in in" type="text" id="nameInput" placeholder="E.g., Alex" required /> -->
+                            <input class="name-in in" type="text" id="nameInput" placeholder="E.g., Alex" required />
+                          </div>
+
+                      </label> 
+
+                      <label class="place-lb lb">
+                          Place (no maps URLs, just text):
+
+                          <div class="in-wr">
+                            <input class="place-in in" type="text" id="placeInput" placeholder="E.g., Conference Room B" required />                  
+                          </div>
+
+                      </label>
+
+                      <label class="time-lb lb">
+                          Time:
+
+                          <div class="in-wr">
+                            <input class="time-in in" type="text" id="timeInput" placeholder="E.g., 3 PM tomorrow" required />
+                          </div>
+
+                      </label>
+
+                      <label class="pur-lb lb">
+                          Purpose / Meeting Topic:
+
+                          <div class="in-wr">
+                            <input class="pur-in in" type="text" id="purposeInput" placeholder="E.g., Project update" />
+                          </div>
+
+                      </label>
+
+                      <label class="note-lb lb">
+                          Additional Notes (optional):
+
+                          <div class="in-wr">
+                              <textarea class="note-in in" id="notesInput" placeholder="Any extra info"></textarea>
+                          </div>
+
+                      </label>
+
+              </div>
+
+              <button id="generateBtn" class="generateBtn">Generate Message</button>
+
+            
+              
+
+              <div class="output" id="output">
+
+                <span id="outputText">output</span>
+
+
+                  <button id="copyBtn" class="copy-btn" aria-label="Copy code">
+                    <span class="copy" >Copy</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" fill="currentColor">
+                      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+                    </svg> 
+                  </button>
+
+              </div>
+
+
+
+
+      </div>
+
+    <!-- the whole app ends -->
+
+
+    <!-- footer starts -->
+
+      <div class="footer-wr hidden">
+
+            <div class="footer">
+
+                  <a class="footer-a" href="https://www.instagram.com/3m3_6a6_9k9/">
+                      <i class="footer-a-i fab fa-instagram"></i>
+                  </a>
+
+                  <a class="footer-a" href="https://www.instagram.com/promptiq.ai_og/">
+                      <i class="footer-a-i fab fa-instagram"></i>
+                  </a>
+
+                  <a class="footer-a" href="https://www.facebook.com/Mustafa.amir333666999/">
+                      <i class="footer-a-i fab fa-facebook"></i>
+                  </a>
+
+                  <a class="footer-a" href="https://github.com/mustafa123321999">
+                      <i class="footer-a-i fab fa-github"></i>
+                  </a>
+
+                  <a class="footer-a" href="https://x.com/Amir12332199">
+                      <i class="footer-a-i fab fa-x"></i>
+                  </a>
+
+                  <a class="footer-a" href="https://www.linkedin.com/in/mustafa-kamal-153a48320/">
+                      <i class="footer-a-i fab fa-linkedin"></i>
+                  </a>
+
+
+            </div>
+
+      </div>
+
+
+    <!-- footer ends -->
+
+</body>
+</html>
+
+
+
+

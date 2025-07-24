@@ -1,0 +1,44 @@
+@import '_qs';
+@import '_wel';
+@import '_footer';
+
+
+
+
+// the anamtion properties starts //
+
+    @property --angle {
+        syntax: "<angle>";
+        inherits: true;
+        initial-value: 0deg;
+    }
+
+    @keyframes rotateAngle {
+        from {
+            --angle: 0deg;
+        }
+        to {
+            --angle: 360deg;
+        }
+    }
+
+// the anamtion properties ends //
+
+* {
+
+    border: none;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+body {
+    background: #242424;
+    z-index: -3;
+    height: auto;
+}

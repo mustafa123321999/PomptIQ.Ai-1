@@ -1,0 +1,331 @@
+
+/* footer social icones starts */
+
+    .footer-wr {
+
+        width: 80vw;
+        height: 12vh;
+        position: relative;
+        top: 5vh;
+       
+
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+
+        margin: auto;
+        margin-bottom: 5rem;
+        padding: 5%;
+        padding: 1vh 2vw; 
+
+        border-radius: 1.5rem;
+        background: #000;
+        overflow: visible;
+
+
+
+    }
+
+    /* footer box anamtion starts */
+
+        .footer-wr::before,
+        .footer-wr::after {
+
+
+            content: " ";
+
+            position: absolute;
+            inset: -3px;
+            padding: 3px;
+            width: 100%;
+            height: 100%;
+
+
+
+            border-radius: inherit;
+            z-index: -1;
+              background-image: conic-gradient( 
+                  from var(--angle), 
+                  rgb(0, 0, 0), 
+                  rgb(255, 255, 255), 
+                  rgb(255, 255, 255));
+
+              animation: rotateAngle 3s linear infinite;
+
+        }
+
+        .footer-wr::before {
+
+            filter: blur(20px);
+
+        }
+
+    /* footer box anamtion ends */
+
+
+    .footer {
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        flex-wrap: wrap;
+
+
+        border-radius: 1.5rem;
+        background: #000;
+
+        z-index: 2;
+    }
+
+    .footer-a {
+
+        display: inline-block;
+
+        text-decoration: none;
+
+        padding: 1.2%;
+        background: #000;
+
+        border-radius: .5rem;
+
+
+        position: relative; 
+
+        z-index: auto;
+
+        
+    }
+
+    /* footer-a anamtion starts */
+
+        .footer-a::before,
+        .footer-a::after {
+
+                content: " ";
+
+                position: absolute;
+
+                inset: -3px;
+                padding: 3px;
+
+                width: 100%;
+                height: 100%;
+
+
+
+                border-radius: inherit;
+                z-index: -1;
+              background-image: conic-gradient( 
+                  from var(--angle), 
+                  rgb(0, 0, 0), 
+                  rgb(255, 255, 255), 
+                  rgb(255, 255, 255));
+
+              animation: rotateAngle 1.2s linear infinite;
+        }
+
+        .footer-a::before {
+            filter: blur(20px);
+        }
+
+
+    /* footer-a anamtion ends */
+
+
+    .footer-a-i {
+
+        font-size: 2.4rem;
+        color: rgb(170, 170, 170);
+        text-shadow: 1px 3px 4px rgb(255, 255, 255);
+        transition: all ease .2s;
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer-a-i:hover {
+
+        font-size: 2.55rem;
+    
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 3px 4px rgb(255, 255, 255);
+
+        transform: rotate(360deg);
+        transition: all ease .2s;
+
+    }
+
+    /* responsive part starts */
+
+
+
+            @media (min-width: 950px) {
+
+
+
+                .footer-a-i {
+
+                    font-size: 2.4rem;
+
+                }
+
+                .footer-a-i:hover {
+
+                    font-size: 2.55rem;
+
+                }
+
+            }
+
+            @media (max-width: 950px) {
+
+
+
+                .footer-a-i {
+
+                    font-size: 2.4rem;
+
+                }
+
+                .footer-a-i:hover {
+
+                    font-size: 2.55rem;
+
+                }
+
+            }
+
+            @media (max-width: 750px) {
+
+
+                .footer-a {
+                    padding: 2%;
+
+                }
+
+                .footer-a-i {
+
+                    font-size: 2.3rem;
+
+                }
+
+                .footer-a-i:hover {
+
+                    font-size: 2.35rem;
+
+                }
+
+            }
+
+            @media (max-width: 620px) {
+
+                .footer-wr {
+
+                    width: 90vw;
+                    padding: 5%;
+                }
+
+                .footer-a {
+
+                    padding: 2%;
+
+                }
+
+                .footer-a-i {
+
+                    font-size: 2.2rem;
+
+                }
+
+                .footer-a-i:hover {
+
+                    font-size: 2.25rem;
+
+                }
+
+            }
+
+            @media (max-width: 530px) {
+
+                .footer-wr {
+
+                    width: 90vw;
+                    padding: 5%;
+                }
+                
+                .footer-a {
+
+                    padding: 2%;
+
+                }
+
+
+                .footer-a-i {
+
+                    font-size: 2rem;
+                    color: rgb(233, 233, 233);
+                    text-shadow: 1px 3px 4px rgb(196, 196, 196);
+                    transition: all ease .2s;
+
+                }
+
+                .footer-a-i:hover {
+
+                    font-size: 2.15rem;
+                
+                    color: rgb(255, 255, 255);
+                    text-shadow: 1px 3px 4px rgb(255, 255, 255);
+
+
+                }
+
+            }
+
+            @media (max-width: 480px) {
+
+
+                .footer-wr {
+
+                    width: 90vw;
+                    padding: 5%;
+                }
+
+                .footer-a {
+
+                    padding: 2%;
+
+                }
+
+
+                .footer-a-i {
+
+                    font-size: 1.8rem;
+                    color: rgb(233, 233, 233);
+                    text-shadow: 1px 3px 4px rgb(196, 196, 196);
+                    transition: all ease .2s;
+
+                }
+
+                .footer-a-i:hover {
+
+                    font-size: 1.85rem;
+                
+                    color: rgb(255, 255, 255);
+                    text-shadow: 1px 3px 4px rgb(255, 255, 255);
+
+
+                }
+
+            }
+    
+
+    /* responsive part finishes */
+
+
+
+
+/* footer social icones ends */

@@ -1,0 +1,384 @@
+// the wellcome box/media starts //
+
+    .wellcome {
+
+
+        margin: 15vh auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+
+
+        // background: rgb(51, 51, 51);
+ 
+
+
+        width: 60vw;
+        height: 60vh;
+
+        border-radius: 2.3rem;
+
+        background-image: 
+        linear-gradient(to bottom, rgba(104, 104, 104, 0.4), rgba(0, 0, 0, 0.8)),
+        url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        text-align: center;
+
+
+        z-index: auto;
+
+    }
+
+    .wellcome::before,
+    .wellcome::after {
+
+        content: " ";
+
+               
+
+
+        position: absolute;
+        inset: -3px;
+        padding: 3px;
+        width: 100%;
+        height: 100%;
+
+
+
+        border-radius: inherit;
+                border-radius: 2.3rem;
+
+        z-index: -1;
+        
+        background-image: conic-gradient( 
+            from var(--angle), 
+            rgb(0, 0, 0), 
+            rgb(255, 255, 255), 
+            rgb(255, 255, 255));
+
+        animation: rotateAngle 2s linear infinite;
+
+    }
+
+    .wellcome::before {
+
+        filter: blur(20px);
+
+    }
+
+
+// the wellcome box/media ends //
+
+
+// text wellcome img/logo h1/h1 media starts //
+
+    .wel-h1 {
+
+        align-self: center;
+
+        span {
+
+
+            cursor: pointer;
+            color: #fff;
+            text-shadow: 3px 4px 5px black;
+
+            font-size: 3.5rem;
+
+            transition: all ease .3s;
+    
+            &:hover {
+
+                color: #000000;
+                text-shadow: 3px 4px 5px rgb(255, 255, 255);
+
+                font-size: 3.65rem;
+            }
+
+        }
+
+        .name {
+
+
+            color: #000000;
+            text-shadow: 3px 4px 5px rgb(255, 255, 255);
+
+            font-size: 3.6rem;
+
+            transition: all ease .4s;
+    
+            &:hover {
+
+                color: #fff;
+                text-shadow: 3px 4px 5px rgb(0, 0, 0);
+
+                font-size: 3.75rem;
+            }
+
+        }
+
+    }
+
+
+
+   
+
+// text wellcome img/logo h1/h1 media ends //
+
+// the overlay starts //
+
+
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: -3;
+    }
+
+// the overlay ends //
+
+@media (max-width: 900px) {
+
+        .wel-h1 {
+
+
+        span {
+
+            font-size: 3.3rem;
+
+    
+            &:hover {
+
+                font-size: 3.45rem;
+            }
+
+        }
+
+        .name {
+
+
+
+            font-size: 3.4rem;
+
+    
+            &:hover {
+
+
+
+                font-size: 3.55rem;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 750px) {
+
+        .wel-h1 {
+
+
+        span {
+
+            font-size: 2.9rem;
+
+    
+            &:hover {
+
+                font-size: 3.15rem;
+            }
+
+        }
+
+        .name {
+
+
+
+            font-size: 3rem;
+
+    
+            &:hover {
+
+
+
+                font-size: 3.25rem;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .wel-h1 {
+
+
+        span {
+
+            font-size: 2.4rem;
+
+    
+            &:hover {
+
+                font-size: 2.5rem;
+            }
+
+        }
+
+        .name {
+
+
+
+            font-size: 2.5rem;
+
+    
+            &:hover {
+
+
+
+                font-size: 2.7rem;
+            }
+
+        }
+
+    }
+
+    .wellcome {
+
+        margin: 15vh auto;
+
+
+        width: 60vw;
+        height: 55vh;
+
+
+    }
+
+}
+
+@media (max-width: 550px) {
+
+        .wel-h1 {
+
+
+        span {
+
+            font-size: 2rem;
+
+    
+            &:hover {
+
+                font-size: 2.2rem;
+            }
+
+        }
+
+        .name {
+
+
+
+            font-size: 2.1rem;
+
+    
+            &:hover {
+
+
+
+                font-size: 2.3rem;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 450px) {
+
+        .wel-h1 {
+
+
+        span {
+
+            font-size: 1.8rem;
+
+    
+            &:hover {
+
+                font-size: 1.9;
+            }
+
+        }
+
+        .name {
+
+
+
+            font-size: 1.9rem;
+
+    
+            &:hover {
+
+
+
+                font-size: 2.1rem;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 400px) {
+
+        .wel-h1 {
+
+
+        span {
+
+            font-size: 1.65rem;
+
+    
+            &:hover {
+
+                font-size: 1.8;
+            }
+
+        }
+
+        .name {
+
+
+
+            font-size: 1.75rem;
+
+    
+            &:hover {
+
+
+
+                font-size: 1.9rem;
+            }
+
+        }
+
+    }
+
+}
+
+
+

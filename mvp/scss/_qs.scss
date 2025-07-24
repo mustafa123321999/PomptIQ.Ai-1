@@ -1,0 +1,937 @@
+.all {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+
+}
+
+// messgae type starts //
+
+  .mes-h2 {
+
+    color: #fff;
+    text-shadow: 4px 4px 5px rgb(141, 141, 141);
+    align-self: center;
+    margin-top: 2rem;
+    font-size: 5rem;
+
+
+  }
+
+// messgae type ends //
+
+
+// themesContainer starts //
+
+  .themesContainer {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    margin: 2rem;
+   
+    
+    width: 90vw;
+    gap: 2rem;
+
+  }
+
+  .themeBtn {
+
+
+    background: #000;
+    color: white;
+    padding: 25px;
+    font-size: 3.2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+
+    transition: all ease .3s;
+
+    
+  }
+
+
+  // anamtion effect for themeBtn starts //
+
+    .themeBtn::before,
+    .themeBtn::after {
+
+          content: " ";
+
+                
+
+
+          position: absolute;
+          inset: -3px;
+          padding: 3px;
+          width: 100%;
+          height: 100%;
+
+
+
+          border-radius: inherit;
+
+          z-index: -1;
+          
+          background-image: conic-gradient( 
+              from var(--angle), 
+              rgb(0, 0, 0), 
+              rgb(255, 255, 255), 
+              rgb(255, 255, 255));
+
+          animation: rotateAngle 1.2s linear infinite;
+
+    }
+
+    .themeBtn::before {
+
+          filter: blur(20px);
+
+    }
+
+  // anamtion effect themeBtn ends //
+
+
+  .themeBtn:hover {
+
+
+    background: #292929;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    font-size: 3.3rem;
+    
+  }
+
+  .themeBtn-active {
+
+    background: #2b2b2b;
+    color: rgb(255, 255, 255);
+    padding: 26px;
+    font-size: 3.3rem;
+
+
+  }
+
+  .selected {
+
+    background: #2b2b2b;
+    color: rgb(255, 255, 255);
+    padding: 26px;
+    font-size: 3.3rem;
+
+
+  }
+
+
+
+
+
+// themesContainer ends //
+
+
+// questions starts //
+
+  .questions {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    margin-top: 2rem;
+
+    width: 90vw;
+
+
+  }
+
+  .lb {
+
+    color: white;
+    text-shadow: 2px 3px 4px #000;
+    display: flex;
+    gap: 1.2vw 1.2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    font-size: 1.5rem;
+
+
+  }
+
+  .in {
+
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    position: relative;
+
+    -webkit-appearance: none; 
+    -moz-appearance: none;   
+    appearance: none;     
+    cursor: pointer;
+
+
+    border-radius: inherit;
+
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: all ease .25s;
+
+     
+
+
+  }
+
+  .in:focus {
+
+      border: none;
+      outline: none;
+      box-shadow: none; 
+  }
+
+  .in:hover {
+
+
+    background: #2c2c2c;
+
+     
+
+
+  }
+
+  .in-wr {
+
+          display: flex;
+
+          position: relative;
+
+          border-radius: 0.5rem;
+          background: transparent;
+
+          margin: auto;
+
+          overflow: visible;
+
+  }
+
+
+  // question anamtion starts //
+
+
+  
+
+        .in-wr::before,
+        .in-wr::after { 
+
+
+            content: " ";
+
+            position: absolute;
+            inset: -3px;
+            padding: 3px;
+            width: 100%;
+            height: 100%;
+
+
+
+            border-radius: inherit;
+            z-index: -1;
+
+            background-image: conic-gradient( 
+                from var(--angle), 
+                rgb(0, 0, 0), 
+                rgb(255, 255, 255), 
+                rgb(255, 255, 255));
+
+            animation: rotateAngle 0.9s linear infinite;
+
+        }
+
+        .in-wr::before {
+
+            filter: blur(20px);
+
+        }
+
+    
+
+  // question anamtion ends //
+
+
+// questions ends //
+
+// generateBtn starts //
+
+
+      .generateBtn {
+
+        background: #000;
+        color: white;
+        padding: 15px;
+        font-size: 1.5rem;
+        margin: 2rem;
+
+        cursor: pointer;
+        border-radius: .8rem;
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+
+        transition: all ease .2s;
+
+      }
+
+      .generateBtn:hover {
+
+        background: #292929;
+        color: rgb(255, 243, 243);
+        padding: 15px;
+        font-size: 1.55rem;
+
+      }
+
+      // generateBtn anamtion starts //
+
+
+        .generateBtn::before,
+        .generateBtn::after {
+
+              content: " ";
+
+                    
+
+
+              position: absolute;
+              inset: -3px;
+              padding: 3px;
+              width: 100%;
+              height: 100%;
+
+
+
+              border-radius: inherit;
+
+              z-index: -1;
+              
+              background-image: conic-gradient( 
+                  from var(--angle), 
+                  rgb(0, 0, 0), 
+                  rgb(255, 255, 255), 
+                  rgb(255, 255, 255));
+
+              animation: rotateAngle .6s linear infinite;
+
+        }
+
+        .generateBtn::before {
+
+              filter: blur(20px);
+
+        }
+
+
+      // generateBtn anamtion ends //
+
+// generateBtn ends //
+
+
+// output starts //
+
+
+    .output {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;      
+      align-self: center;
+      position: relative;
+
+      width: 90vw;
+      margin: 2rem auto;
+
+      padding: 2rem;
+
+      background: #000;
+      color: white;
+      font-size: 1.5rem;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      text-align: center;
+
+      border-radius: 1.5rem;
+
+
+
+
+      transition: all ease .2s;
+
+    }
+
+
+    //output anamtion starts //
+
+        .output::before,
+        .output::after {
+
+              content: " ";
+
+                    
+
+
+              position: absolute;
+              inset: -3px;
+              padding: 3px;
+              width: 100%;
+              height: 100%;
+
+
+
+              border-radius: inherit;
+
+              z-index: -1;
+              
+              background-image: conic-gradient( 
+                  from var(--angle), 
+                  rgb(0, 0, 0), 
+                  rgb(255, 255, 255), 
+                  rgb(255, 255, 255));
+
+              animation: rotateAngle 3s linear infinite;
+
+        }
+
+        .output::before {
+
+              filter: blur(20px);
+
+        }
+
+
+    //output anamtion ends //
+
+
+    // copy output starts //
+
+
+
+      .copy-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        opacity: 0.5;
+        font-size: 18px;
+        transition: opacity 0.2s ease;
+        padding: 4px;
+        color: #b9b9b9;
+      }
+
+      .copy-btn:hover {
+        opacity: 1;
+        color: #ffffff;
+      }
+
+      .copy {
+
+        position: relative;
+        top: -5px;
+        right: -5px;
+
+        cursor: pointer;
+        opacity: 1;
+        font-size: 18px;
+        transition: opacity 0.2s ease;
+        padding: 4px;
+        color: #b9b9b9;
+      }
+      .copy:hover {
+        opacity: 1;
+        color: #ffffff;
+      }
+
+
+
+    // copy output ends //
+
+// output sends //
+
+
+
+// Media section starts //
+
+    @media (max-width: 1050px) {
+
+      // messgae type starts //
+
+        .mes-h2 {
+
+
+          font-size: 4rem;
+
+
+        }
+
+      // messgae type ends //
+
+      // themesContainer media starts //
+
+
+
+        .themesContainer {
+
+          gap: 2rem;
+
+        }
+
+        .themeBtn {
+
+          padding: 25px;
+          font-size: 3rem;
+          border-radius: 1.9rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          padding: 25px;
+          font-size: 3.1rem;
+          
+        }
+
+        .themeBtn-active {
+
+          padding:26px;
+          font-size: 3.2rem;
+
+        }
+
+      // themesContainer media ends //
+
+      
+    }
+
+    @media (max-width: 950px) {
+
+      // messgae type starts //
+
+        .mes-h2 {
+
+
+          font-size: 3rem;
+
+
+        }
+
+      // messgae type ends //
+
+      // themesContainer media starts //
+
+
+        .themesContainer {
+
+          gap: 2rem;
+
+        }
+
+        .themeBtn {
+
+          padding: 25px;
+          font-size: 2.2rem;
+          border-radius: 1.8rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          padding: 25px;
+          font-size: 2.3rem;
+          
+        }
+
+        .themeBtn-active {
+
+          padding: 26px;
+          font-size: 2.4rem;
+
+        }
+
+      // themesContainer media ends //
+
+
+
+        
+    }
+
+    @media (max-width: 800px) {
+
+      // messgae type starts //
+
+        .mes-h2 {
+
+
+          font-size: 2.8rem;
+
+
+        }
+
+      // messgae type ends //
+      
+      // themesContainer media starts //
+      
+        .themesContainer {
+
+          gap: 2rem;
+
+        }
+
+        .themeBtn {
+
+          padding: 20px;
+          font-size: 2.1rem;
+          border-radius: 1.7rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          padding: 20px;
+          font-size: 2.2rem;
+          
+        }
+
+        .themeBtn-active {
+
+          padding: 21px;
+          font-size: 2.3rem;
+
+        }
+
+      // themesContainer media ends //
+
+      
+    }
+
+    @media (max-width: 700px) {
+
+      // messgae type starts //
+
+        .mes-h2 {
+
+
+          font-size: 2.8rem;
+
+
+        }
+
+      // messgae type ends //
+
+      // themesContainer media starts //
+
+
+        .themesContainer {
+
+          gap: 2rem;
+
+        }
+
+        .themeBtn {
+
+          padding: 18px;
+          font-size: 1.9rem;
+          border-radius: 1.6rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          padding: 18px;
+          font-size: 2rem;
+          
+        }
+
+        .themeBtn-active {
+
+          padding: 19px;
+          font-size: 2.1rem;
+
+        }
+
+      // themesContainer media ends //
+
+      
+    }
+
+
+    @media (max-width: 650px) {
+
+
+
+      // themesContainer media starts //
+
+
+
+
+        .themeBtn {
+
+          font-size: 1.8rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          font-size: 1.9rem;
+          
+        }
+
+        .themeBtn-active {
+
+          font-size: 2rem;
+
+        }
+
+      // themesContainer media ends //
+
+      
+    }
+
+    @media (max-width: 600px) {
+
+      // messgae type starts //
+
+        .mes-h2 {
+
+
+          font-size: 2.8rem;
+
+
+        }
+
+      // messgae type ends //
+
+      // themesContainer media starts //
+
+
+        .themesContainer {
+
+          gap: 2rem;
+
+        }
+
+        .themeBtn {
+
+          padding: 18px;
+          font-size: 1.6rem;
+          border-radius: 1.5rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          padding: 18px;
+          // font-size: 2.25rem;
+          font-size: 1.7rem;
+          
+        }
+
+        .themeBtn-active {
+
+          padding: 19px;
+          font-size: 1.9rem;
+
+        }
+
+      // themesContainer media ends //
+
+      
+    }
+
+    @media (max-width: 500px) {
+
+
+      // messgae type starts //
+
+        .mes-h2 {
+
+
+          font-size: 2.3rem;
+
+
+        }
+
+      // messgae type ends //
+
+      // themesContainer media starts //
+
+        .themesContainer {
+
+          gap: 2rem;
+
+        }
+
+        .themeBtn {
+
+          padding: 16px;
+          font-size: 1.4rem;
+          border-radius: 1.4rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          padding: 16px;
+          font-size: 1.5rem;
+          
+        }
+
+        .themeBtn-active {
+
+          padding: 17px;
+          font-size: 1.6rem;
+
+        }
+
+      // themesContainer media ends //
+
+      
+    }
+
+    @media (max-width: 400px) {
+
+      // messgae type starts //
+
+        .mes-h2 {
+
+          font-size: 2.2rem;
+
+
+        }
+
+      // messgae type ends //
+
+      // themesContainer media starts //
+
+
+        .themesContainer {
+
+          gap: 1.8rem;
+
+        }
+
+        .themeBtn {
+
+          padding: 14px;
+          font-size: 1.4rem;
+          border-radius: 1.3rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          padding: 14px;
+          font-size: 1.5rem;
+          
+        }
+
+        .themeBtn-active {
+
+          padding: 15px;
+          font-size: 1.6rem;
+
+        }
+
+      // themesContainer media ends //
+
+
+
+      
+    }
+
+    @media (max-width: 300px) {
+
+      // messgae type starts //
+
+        .mes-h2 {
+
+          font-size: 1.8rem;
+
+
+        }
+
+      // messgae type ends //
+
+      // themesContainer media starts //
+       
+
+
+        .themesContainer {
+
+          gap: 1.8rem;
+
+        }
+
+        .themeBtn {
+
+          padding: 12px;
+          font-size: 1.3rem;
+          border-radius: 1.2rem;
+  
+        }
+
+        .themeBtn:hover {
+
+          padding: 12px;
+          font-size: 1.4rem;
+          
+        }
+
+        .themeBtn-active {
+
+          padding: 13px;
+          font-size: 1.5rem;
+
+        }
+
+      // themesContainer media ends //
+      
+
+      
+    }
+
+// Media section ends //
