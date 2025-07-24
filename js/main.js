@@ -9,12 +9,10 @@ let API_KEY;
 async function loadApiKey() {
   try {
     const res = await fetch('/.netlify/functions/get-key');
-    // const res = await fetch('../netlify/functions/get-key'); // Adjust the path as needed
     const data = await res.json();
     API_KEY = data.key;
 
-    // 👉 You can now use API_KEY to call your AI API
-    console.log("Loaded API key:", API_KEY);
+
 
     // Call your AI function here if needed
     // generatePrompt(API_KEY); // or whatever your flow is
